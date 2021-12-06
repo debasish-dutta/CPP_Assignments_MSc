@@ -86,6 +86,14 @@ void menu(){
 
 int main(int argc, char** argv) 
 {
-    menu();
+    try
+    {
+        menu();
+    }
+    catch(...)
+    {
+        cout << "An error has occured." << endl;
+        return 1;
+    }
     return 0;
 }
